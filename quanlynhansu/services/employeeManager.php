@@ -16,10 +16,12 @@ class EmployeeManager
     }
     static function update($employee, $index)
     {
-        array_splice(self::$employee, $index, 1, $employee);
+        self::$employee[$index] =$employee;
+        
     }
     static function getEmployee()
     {
         return self::$employee;
     }
 }
+
