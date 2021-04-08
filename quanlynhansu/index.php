@@ -45,11 +45,13 @@ $data2 = new Employee($employe2);
 EmployeeManager::add($data2);
 $data3 = new Employee($employe3);
 EmployeeManager::add($data3);
+
 $data4 = new Employee($employe4);
 
-// EmployeeManager::update($data4, 1);
+EmployeeManager::dele(2);
+EmployeeManager::update($data4, 2);
 
-// EmployeeManager::dele(2);
+
 
 
 $getData = EmployeeManager::getEmployee();
